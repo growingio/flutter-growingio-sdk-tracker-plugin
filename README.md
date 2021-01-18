@@ -2,6 +2,8 @@
 
 A Flutter plugin for GrowingIO SDK 3.0
 
+- [集成文档](https://github.com/growingio/flutter-growingio-sdk-tracker-plugin/wiki/%E9%9B%86%E6%88%90%E6%96%87%E6%A1%A3)
+
 ## Getting Started
 
 This project is a starting point for a Flutter

@@ -19,6 +19,21 @@ class GrowingTracker {
     return await _channel.invokeMethod("trackCustomEvent", args);
   }
 
+  static Future<void> trackCustomEventItemKeyId(String eventId,String itemKey,String itemId,
+      {Map<String, dynamic> variable}) async {
+    Map<String, dynamic> args = {"eventId": eventId};
+    if (variable != null) {
+      args['variable'] = variable;
+    }
+    if (itemKey != null) {
+      args["itemKey"] = itemKey;
+    }
+    if (itemId != null) {
+    args["itemId"] = itemId;
+    }
+    return await _channel.invokeMethod("trackCustomEventItemKeyId", args);
+  }
+
   static Future<void> setLoginUserAttributes(Map<String, dynamic> variable) async {
     try {
       return await _channel.invokeMethod("setLoginUserAttributes", variable);
@@ -28,12 +43,6 @@ class GrowingTracker {
     }
   }
 
-  static Future<void> setVisitorAttributes(Map<String, dynamic> variable) async {
-    return await _channel.invokeMethod("setVisitorAttributes", variable);
-  }
-  static Future<void> setConversionVariables(Map<String, dynamic> variable) async {
-    return await _channel.invokeMethod("setConversionVariables", variable);
-  }
   static Future<void> setLoginUserId(String userId) async {
     return await _channel.invokeMethod("setLoginUserId", {"userId": userId});
   }

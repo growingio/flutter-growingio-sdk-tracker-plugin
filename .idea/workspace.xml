@@ -5,101 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a318bec-ef70-4917-ab21-f1c196ffe71b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/src/main/java/com/example/growingio_sdk_tracker_plugin/GrowingioSdkTrackerPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.metadata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/java/com/example/growingio_sdk_tracker_plugin_example/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/java/com/example/growingio_sdk_tracker_plugin_example/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Runner/main.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/growingio_sdk_tracker_plugin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/GrowingioSdkTrackerPlugin.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/GrowingioSdkTrackerPlugin.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/growingio_sdk_tracker_plugin.podspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/growingio_sdk_tracker_plugin.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/growingio_sdk_tracker_plugin_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/example/growingio_sdk_tracker_plugin/GrowingioSdkTrackerPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/example/growingio_sdk_tracker_plugin/GrowingioSdkTrackerPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/growingio_sdk_tracker_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/growingio_sdk_tracker_plugin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/GrowingioSdkTrackerPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/GrowingioSdkTrackerPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/growingio_sdk_tracker_plugin.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/growingio_sdk_tracker_plugin.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/growingio_sdk_tracker_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/growingio_sdk_tracker_plugin.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,46 +66,52 @@
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state width="442" height="466" key="DebuggerActiveHint/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610453978588" />
-    <state width="1575" height="720" key="GridCell.Tab.0.bottom" timestamp="1610937077668">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1575" height="507" key="GridCell.Tab.0.bottom" timestamp="1615375504712">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1575" height="292" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1610596137333" />
-    <state width="1575" height="573" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1610592618867" />
+    <state width="1575" height="239" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.953@0.23.1680.953" timestamp="1615375324940" />
+    <state width="1575" height="507" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1615375504712" />
+    <state width="1575" height="235" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1615365419060" />
     <state width="1575" height="720" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610937077668" />
     <state width="1575" height="220" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610520866343" />
     <state width="1575" height="220" key="GridCell.Tab.0.bottom/1680.23.2560.1417/0.23.1680.961@0.23.1680.961" timestamp="1610521184956" />
-    <state width="1575" height="720" key="GridCell.Tab.0.center" timestamp="1610937077667">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1575" height="507" key="GridCell.Tab.0.center" timestamp="1615375504711">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1575" height="292" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1610596137333" />
-    <state width="1575" height="573" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1610592618867" />
+    <state width="1575" height="239" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.953@0.23.1680.953" timestamp="1615375324940" />
+    <state width="1575" height="507" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1615375504711" />
+    <state width="1575" height="235" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1615365419060" />
     <state width="1575" height="720" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610937077667" />
     <state width="1575" height="220" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610520866342" />
     <state width="1575" height="220" key="GridCell.Tab.0.center/1680.23.2560.1417/0.23.1680.961@0.23.1680.961" timestamp="1610521184955" />
-    <state width="1575" height="720" key="GridCell.Tab.0.left" timestamp="1610937077666">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1575" height="507" key="GridCell.Tab.0.left" timestamp="1615375504710">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1575" height="292" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1610596137332" />
-    <state width="1575" height="573" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1610592618866" />
+    <state width="1575" height="239" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.953@0.23.1680.953" timestamp="1615375324939" />
+    <state width="1575" height="507" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1615375504710" />
+    <state width="1575" height="235" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1615365419059" />
     <state width="1575" height="720" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610937077666" />
     <state width="1575" height="220" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610520866341" />
     <state width="1575" height="220" key="GridCell.Tab.0.left/1680.23.2560.1417/0.23.1680.961@0.23.1680.961" timestamp="1610521184954" />
-    <state width="1575" height="720" key="GridCell.Tab.0.right" timestamp="1610937077668">
-      <screen x="0" y="23" width="1680" height="958" />
+    <state width="1575" height="507" key="GridCell.Tab.0.right" timestamp="1615375504711">
+      <screen x="0" y="23" width="1680" height="954" />
     </state>
-    <state width="1575" height="292" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1610596137333" />
-    <state width="1575" height="573" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1610592618867" />
+    <state width="1575" height="239" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.953@0.23.1680.953" timestamp="1615375324940" />
+    <state width="1575" height="507" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1615375504711" />
+    <state width="1575" height="235" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1615365419060" />
     <state width="1575" height="720" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610937077668" />
     <state width="1575" height="220" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610520866342" />
     <state width="1575" height="220" key="GridCell.Tab.0.right/1680.23.2560.1417/0.23.1680.961@0.23.1680.961" timestamp="1610521184955" />
-    <state x="537" y="360" key="com.intellij.ide.util.TipDialog" timestamp="1610936981959">
-      <screen x="0" y="23" width="1680" height="960" />
+    <state x="537" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1615375359201">
+      <screen x="0" y="23" width="1680" height="953" />
     </state>
+    <state x="537" y="358" key="com.intellij.ide.util.TipDialog/1680.23.2560.1417/0.23.1680.953@0.23.1680.953" timestamp="1615375359201" />
     <state x="537" y="360" key="com.intellij.ide.util.TipDialog/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610936981959" />
-    <state x="815" y="259" width="745" height="486" key="find.popup" timestamp="1610538838409">
-      <screen x="0" y="23" width="1680" height="954" />
+    <state x="815" y="259" width="852" height="552" key="find.popup" timestamp="1615365000972">
+      <screen x="0" y="23" width="1680" height="956" />
     </state>
-    <state x="815" y="259" width="745" height="486" key="find.popup/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1610538838409" />
+    <state x="815" y="259" width="852" height="550" key="find.popup/1680.23.2560.1417/0.23.1680.954@0.23.1680.954" timestamp="1615364403785" />
+    <state x="815" y="259" width="852" height="552" key="find.popup/1680.23.2560.1417/0.23.1680.956@0.23.1680.956" timestamp="1615365000972" />
     <state x="815" y="260" width="696" height="486" key="find.popup/1680.23.2560.1417/0.23.1680.958@0.23.1680.958" timestamp="1610449825246" />
     <state x="815" y="260" width="696" height="486" key="find.popup/1680.23.2560.1417/0.23.1680.960@0.23.1680.960" timestamp="1610449744796" />
     <state x="562" y="245" width="670" height="676" key="search.everywhere.popup" timestamp="1610451500100">
@@ -201,16 +122,5 @@
       <screen x="0" y="23" width="1680" height="961" />
     </state>
     <state x="601" y="389" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1680.23.2560.1417/0.23.1680.961@0.23.1680.961" timestamp="1610520562503" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/android/src/main/java/com/example/growingio_sdk_tracker_plugin/GrowingioSdkTrackerPlugin.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

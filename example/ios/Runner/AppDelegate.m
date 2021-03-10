@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
 #import "GeneratedPluginRegistrant.h"
-#import <GrowingAnalytics/GrowingTracker.h>
-#import <GrowingAnalytics/GrowingTrackConfiguration.h>
+#import "GrowingTracker.h"
+#import "GrowingTrackConfiguration.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application

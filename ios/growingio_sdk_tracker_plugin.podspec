@@ -16,7 +16,7 @@ A Flutter plugin for GrowingIO SDK 3.0
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'GrowingAnalytics/Tracker'
+  s.dependency 'GrowingAnalytics-cdp/Tracker'
   s.platform = :ios, '8.0'
 
   # Flutter.framework does not contain a i386 slice.

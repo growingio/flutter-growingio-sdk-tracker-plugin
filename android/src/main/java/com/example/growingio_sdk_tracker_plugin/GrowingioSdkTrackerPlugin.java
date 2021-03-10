@@ -36,12 +36,10 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
     if (call.method.equals("trackCustomEvent")){
       onTrackCustomEvent(call);
-    }else if (call.method.equals("setConversionVariables")){
-      onSetConversionVariables(call);
+    }else if (call.method.equals("trackCustomEventItemKeyId")){
+      onTrackCustomEventItemKeyId(call);
     }else if (call.method.equals("setLoginUserAttributes")){
       onSetLoginUserAttributes(call);
-    }else if (call.method.equals("setVisitorAttributes")) {
-      onSetVisitorAttributes(call);
     }else if (call.method.equals("cleanLoginUserId")){
       onCleanLoginUserId();
     }else if (call.method.equals("setLoginUserId")){
@@ -51,10 +49,6 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
       return;
     }
     result.success(null);
-  }
-
-  private void onSetConversionVariables(MethodCall call){
-    GrowingTracker.get().setConversionVariables((Map<String, String>)call.arguments);
   }
 
   private void onSetLoginUserAttributes(MethodCall call){
@@ -67,10 +61,6 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
 
   private void onCleanLoginUserId(){
     GrowingTracker.get().cleanLoginUserId();
-  }
-
-  private void onSetVisitorAttributes(MethodCall call){
-    GrowingTracker.get().setVisitorAttributes((Map<String, String>)call.arguments);
   }
 
   private void onTrackCustomEvent(MethodCall call){
@@ -86,7 +76,19 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
       gio.trackCustomEvent(eventId);
     }
   }
-
+  private void onTrackCustomEventItemKeyId(MethodCall call){
+    String eventId = (String) call.argument("eventId");
+    GrowingTracker gio = (GrowingTracker) GrowingTracker.get();
+    if (call.hasArgument("variable")){
+      Map<String, String> variable = call.argument("variable");
+      String itemKey = (String) call.argument("itemKey");
+      String itemId = (String) call.argument("itemId");
+      if (variable == null) return;
+      gio.trackCustomEvent(eventId,itemKey,itemId,(Map<String, String>) variable);
+    }else{
+      gio.trackCustomEvent(eventId,itemKey,itemId);
+    }
+  }
 
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {

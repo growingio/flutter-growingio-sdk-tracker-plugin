@@ -1,11 +1,13 @@
 PODS:
   - Flutter (1.0.0)
-  - GrowingAnalytics/Tracker (3.0.0):
-    - GrowingAnalytics/TrackerCore
+  - GrowingAnalytics-cdp/Tracker (3.0.0):
+    - GrowingAnalytics-cdp/TrackerCore (= 3.0.0)
+  - GrowingAnalytics-cdp/TrackerCore (3.0.0):
+    - GrowingAnalytics/TrackerCore (= 3.0.0)
   - GrowingAnalytics/TrackerCore (3.0.0)
   - growingio_sdk_tracker_plugin (0.0.1):
     - Flutter
-    - GrowingAnalytics/Tracker
+    - GrowingAnalytics-cdp/Tracker
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -14,6 +16,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - GrowingAnalytics
+    - GrowingAnalytics-cdp
 
 EXTERNAL SOURCES:
   Flutter:
@@ -24,7 +27,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   GrowingAnalytics: 784016b99ce69417053899f3f68452786a10efd7
-  growingio_sdk_tracker_plugin: 99efd3c782a9f006d41787860f26736f9b120c00
+  GrowingAnalytics-cdp: 2a6cfd06fc15ba5f23a72cee10dbb25f1f7514c0
+  growingio_sdk_tracker_plugin: 4b40c35899905887251e0e490e65ee2de592d3f9
 
 PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
 

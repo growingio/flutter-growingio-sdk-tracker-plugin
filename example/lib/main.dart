@@ -67,20 +67,15 @@ class _MyAppState extends State<MyApp> {
     GrowingTracker.trackCustomEvent('eventId', variable: {'testkey': 'testValue', 'testNumKey': '2333'});
   }
 
+  void _clickTrackItemKeyId(){
+    GrowingTracker.trackCustomEventItemKeyId('eventId','mykey','myId');
+    // GrowingTracker.trackCustomEventItemKeyId('testEventId', num: 23.0, variable: {'testKey': 'testValue', 'testNumKey': '233'});
+    // GrowingTracker.trackCustomEventItemKeyId('eventId', num: 23.0);
+    // GrowingTracker.trackCustomEventItemKeyId('eventId', variable: {'testkey': 'testValue', 'testNumKey': '2333'});
+  }
+
   void _clickSetLoginUserAttributes(){
     GrowingTracker.setLoginUserAttributes({
-      'testKey': 'testValue', 'testNumKey': '2333'
-    });
-  }
-
-  void _clickSetVisitorAttributes(){
-    GrowingTracker.setVisitorAttributes({
-      'testKey': 'testValue', 'testNumKey': '2333'
-    });
-  }
-
-  void _clickSetConversionVariables(){
-    GrowingTracker.setConversionVariables({
       'testKey': 'testValue', 'testNumKey': '2333'
     });
   }
@@ -105,9 +100,8 @@ class _MyAppState extends State<MyApp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new MyButton(text: "trackCustomEvent", onPressed: _clickTrack),
+                new MyButton(text: "trackCustomEventItemKeyId", onPressed: _clickTrackItemKeyId),
                 new MyButton(text: "setLoginUserAttributes", onPressed: _clickSetLoginUserAttributes),
-                new MyButton(text: "setVisitorAttributes", onPressed: _clickSetVisitorAttributes),
-                new MyButton(text: "setConversionVariables", onPressed: _clickSetConversionVariables),
                 new MyButton(text: "setLoginUserId", onPressed: _clickSetLoginUserId),
                 new MyButton(text: "cleanLoginUserId", onPressed: _clickCleanLoginUserId)
               ],

@@ -58,5 +58,5 @@ flutter {
 
 
 dependencies {
-    implementation 'com.growingio.android:tracker:latest.release'
+    implementation 'com.growingio.android:tracker-cdp:latest.release'
 }

@@ -7,6 +7,7 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     GrowingTrackConfiguration *configuration = [GrowingTrackConfiguration configurationWithProjectId:@"0a1b4118dd954ec3bcc69da5138bdb96"];
+    configuration.dataSourceId = @"cdpDataSourceId";
     configuration.debugEnabled = YES;
     
     [GrowingTracker startWithConfiguration:configuration launchOptions:launchOptions];

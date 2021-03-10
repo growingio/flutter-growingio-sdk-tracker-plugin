@@ -8,6 +8,7 @@
 针对于SDK 3.0的flutter插件，仅支持埋点sdk。
 
 - [集成文档](https://github.com/growingio/flutter-growingio-sdk-tracker-plugin/wiki/%E9%9B%86%E6%88%90%E6%96%87%E6%A1%A3)
+- [CDP集成文档](https://github.com/growingio/flutter-growingio-sdk-tracker-plugin/wiki/CDP%E9%9B%86%E6%88%90%E6%96%87%E6%A1%A3)
 
 ## Getting Started
 

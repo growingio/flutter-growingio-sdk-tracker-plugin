@@ -16,9 +16,6 @@
 
 //打点事件方法
 - (BOOL)methodName:(NSString *)methodName andArguments:(id)arguments{
-    if (![arguments isKindOfClass:[NSDictionary class]]) {
-        return NO;
-    }
     NSDictionary *argDic = arguments ;
     if ([methodName isEqualToString:@"trackCustomEvent"]) {
         NSString *eventID = argDic[@"eventId"];

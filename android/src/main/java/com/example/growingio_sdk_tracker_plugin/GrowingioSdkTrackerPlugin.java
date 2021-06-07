@@ -1,22 +1,16 @@
 package com.example.growingio_sdk_tracker_plugin;
 
 import androidx.annotation.NonNull;
-import android.text.TextUtils;
 
-import android.util.Log;
 import java.util.Map;
 
-import com.growingio.android.sdk.track.ErrorLog;
 import com.growingio.android.sdk.track.GrowingTracker;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** GrowingioSdkTrackerPlugin */
 public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandler {
@@ -65,28 +59,24 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
 
   private void onTrackCustomEvent(MethodCall call){
     String eventId = (String) call.argument("eventId");
-    Double num = call.argument("num");
-    boolean hasNum = call.hasArgument("num");
-    GrowingTracker gio = (GrowingTracker) GrowingTracker.get();
     if (call.hasArgument("variable")){
       Map<String, String> variable = call.argument("variable");
       if (variable == null) return;
-      gio.trackCustomEvent(eventId, (Map<String, String>) variable);
+      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>) variable);
     }else{
-      gio.trackCustomEvent(eventId);
+      GrowingTracker.get().trackCustomEvent(eventId);
     }
   }
   private void onTrackCustomEventItemKeyId(MethodCall call){
     String eventId = (String) call.argument("eventId");
-    GrowingTracker gio = (GrowingTracker) GrowingTracker.get();
     String itemKey = (String) call.argument("itemKey");
     String itemId = (String) call.argument("itemId");
     if (call.hasArgument("variable")){
       Map<String, String> variable = call.argument("variable");
       if (variable == null) return;
-      gio.trackCustomEvent(eventId,(Map<String, String>) variable,itemKey,itemId);
+      GrowingTracker.get().trackCustomEvent(eventId,(Map<String, String>) variable,itemKey,itemId);
     }else{
-      gio.trackCustomEvent(eventId,itemKey,itemId);
+      GrowingTracker.get().trackCustomEvent(eventId,itemKey,itemId);
     }
   }
 

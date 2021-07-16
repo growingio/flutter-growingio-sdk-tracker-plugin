@@ -58,5 +58,6 @@ flutter {
 
 
 dependencies {
-    implementation 'com.growingio.android:tracker:latest.release'
+    //请使用3.2.1之后正式版本，这里仅为了跳过3.2.0版本而使用了快照版
+    implementation 'com.growingio.android:tracker:3.2.1-06292-SNAPSHOT'
 }

@@ -67,26 +67,24 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
     String eventId = (String) call.argument("eventId");
     Double num = call.argument("num");
     boolean hasNum = call.hasArgument("num");
-    GrowingTracker gio = (GrowingTracker) GrowingTracker.get();
     if (call.hasArgument("variable")){
       Map<String, String> variable = call.argument("variable");
       if (variable == null) return;
-      gio.trackCustomEvent(eventId, (Map<String, String>) variable);
+      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>) variable);
     }else{
-      gio.trackCustomEvent(eventId);
+      GrowingTracker.get().trackCustomEvent(eventId);
     }
   }
   private void onTrackCustomEventItemKeyId(MethodCall call){
     String eventId = (String) call.argument("eventId");
-    GrowingTracker gio = (GrowingTracker) GrowingTracker.get();
     String itemKey = (String) call.argument("itemKey");
     String itemId = (String) call.argument("itemId");
     if (call.hasArgument("variable")){
       Map<String, String> variable = call.argument("variable");
       if (variable == null) return;
-      gio.trackCustomEvent(eventId,(Map<String, String>) variable,itemKey,itemId);
+      GrowingTracker.get().trackCustomEvent(eventId,(Map<String, String>) variable,itemKey,itemId);
     }else{
-      gio.trackCustomEvent(eventId,itemKey,itemId);
+      GrowingTracker.get().trackCustomEvent(eventId,itemKey,itemId);
     }
   }
 

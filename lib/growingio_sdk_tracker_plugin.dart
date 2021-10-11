@@ -39,7 +39,7 @@ class GrowingTracker {
       return await _channel.invokeMethod("setLoginUserAttributes", variable);
     }
     catch(e) {
-      print('error :' + e);
+      print('error :' + e.toString());
     }
   }
 

@@ -7,8 +7,9 @@ class GrowingTracker {
   static const MethodChannel _channel =
       const MethodChannel('growingio_sdk_tracker_plugin');
 
-  static Future<void> trackCustomEvent(String eventId,
-      {double num, Map<String, dynamic> variable}) async {
+  static Future<void> trackCustomEvent(String? eventId,
+      {double? num, Map<String, dynamic>? variable}) async {
+    if (eventId == null) return;
     Map<String, dynamic> args = {"eventId": eventId};
     if (num != null) {
       args['num'] = num;
@@ -19,8 +20,9 @@ class GrowingTracker {
     return await _channel.invokeMethod("trackCustomEvent", args);
   }
 
-  static Future<void> trackCustomEventItemKeyId(String eventId,String itemKey,String itemId,
-      {Map<String, dynamic> variable}) async {
+  static Future<void> trackCustomEventItemKeyId(String? eventId,String? itemKey,String? itemId,
+      {Map<String, dynamic>? variable}) async {
+    if (eventId == null||itemKey == null||itemId == null) return;
     Map<String, dynamic> args = {"eventId": eventId};
     if (variable != null) {
       args['variable'] = variable;
@@ -34,7 +36,8 @@ class GrowingTracker {
     return await _channel.invokeMethod("trackCustomEventItemKeyId", args);
   }
 
-  static Future<void> setLoginUserAttributes(Map<String, dynamic> variable) async {
+  static Future<void> setLoginUserAttributes(Map<String, dynamic>? variable) async {
+    if (variable == null) return;
     try {
       return await _channel.invokeMethod("setLoginUserAttributes", variable);
     }
@@ -43,7 +46,8 @@ class GrowingTracker {
     }
   }
 
-  static Future<void> setLoginUserId(String userId) async {
+  static Future<void> setLoginUserId(String? userId) async {
+    if (userId == null) return;
     return await _channel.invokeMethod("setLoginUserId", {"userId": userId});
   }
   static Future<void> cleanLoginUserId() async {

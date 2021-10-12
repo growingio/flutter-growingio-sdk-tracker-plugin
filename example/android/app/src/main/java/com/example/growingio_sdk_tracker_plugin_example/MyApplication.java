@@ -14,8 +14,7 @@ public class MyApplication extends FlutterApplication {
         if (sConfiguration == null) {
             sConfiguration = new TrackConfiguration("bfc5d6a3693a110d", "growing.d80871b41ef40518")
                     .setUploadExceptionEnabled(false)
-                    .setDebugEnabled(true)
-                    .setOaidEnabled(false);
+                    .setDebugEnabled(true);
         }
         GrowingTracker.startWithConfiguration(this, sConfiguration);
     }

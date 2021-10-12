@@ -1,6 +1,6 @@
 name: growingio_sdk_tracker_plugin
 description: A Flutter plugin for GrowingIO SDK 3.0
-version: 0.0.1
+version: 0.0.2-cdp
 homepage: https://github.com/growingio/flutter-growingio-sdk-tracker-plugin
 
 environment:

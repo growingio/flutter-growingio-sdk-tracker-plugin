@@ -28,57 +28,59 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    if (call.method.equals("trackCustomEvent")){
+    if (call.method.equals("trackCustomEvent")) {
       onTrackCustomEvent(call);
-    }else if (call.method.equals("trackCustomEventItemKeyId")){
+    } else if (call.method.equals("trackCustomEventItemKeyId")) {
       onTrackCustomEventItemKeyId(call);
-    }else if (call.method.equals("setLoginUserAttributes")){
+    } else if (call.method.equals("setLoginUserAttributes")) {
       onSetLoginUserAttributes(call);
-    }else if (call.method.equals("cleanLoginUserId")){
+    } else if (call.method.equals("cleanLoginUserId")) {
       onCleanLoginUserId();
-    }else if (call.method.equals("setLoginUserId")){
+    } else if (call.method.equals("setLoginUserId")) {
       onSetLoginUserId(call);
-    }else{
+    } else {
       result.notImplemented();
       return;
     }
     result.success(null);
   }
 
-  private void onSetLoginUserAttributes(MethodCall call){
+  private void onSetLoginUserAttributes(MethodCall call) {
     GrowingTracker.get().setLoginUserAttributes((Map<String, String>)call.arguments);
   }
 
-  private void onSetLoginUserId(MethodCall call){
+  private void onSetLoginUserId(MethodCall call) {
     GrowingTracker.get().setLoginUserId((String)call.argument("userId"));
   }
 
-  private void onCleanLoginUserId(){
+  private void onCleanLoginUserId() {
     GrowingTracker.get().cleanLoginUserId();
   }
 
-  private void onTrackCustomEvent(MethodCall call){
-    String eventId = (String) call.argument("eventId");
-//    Double num = call.argument("num");
-//    boolean hasNum = call.hasArgument("num");
-    if (call.hasArgument("variable")){
-      Map<String, String> variable = call.argument("variable");
-      if (variable == null) return;
-      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>) variable);
-    }else{
+  private void onTrackCustomEvent(MethodCall call) {
+    String eventId = (String)call.argument("eventId");
+    Map<String, String> variable = null;
+    if (call.hasArgument("variable")) {
+      variable = call.argument("variable");
+    }
+    if (variable == null) {
       GrowingTracker.get().trackCustomEvent(eventId);
+    } else {
+      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>)variable);
     }
   }
-  private void onTrackCustomEventItemKeyId(MethodCall call){
-    String eventId = (String) call.argument("eventId");
-    String itemKey = (String) call.argument("itemKey");
-    String itemId = (String) call.argument("itemId");
-    if (call.hasArgument("variable")){
-      Map<String, String> variable = call.argument("variable");
-      if (variable == null) return;
-      GrowingTracker.get().trackCustomEvent(eventId,(Map<String, String>) variable,itemKey,itemId);
-    }else{
-      GrowingTracker.get().trackCustomEvent(eventId,itemKey,itemId);
+  private void onTrackCustomEventItemKeyId(MethodCall call) {
+    String eventId = (String)call.argument("eventId");
+    String itemKey = (String)call.argument("itemKey");
+    String itemId = (String)call.argument("itemId");
+    Map<String, String> variable = null;
+    if (call.hasArgument("variable")) {
+      variable = call.argument("variable");
+    }
+    if (variable == null) {
+      GrowingTracker.get().trackCustomEvent(eventId, itemKey, itemId);
+    } else {
+      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>)variable, itemKey, itemId);
     }
   }
 

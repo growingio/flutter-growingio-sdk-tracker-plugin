@@ -62,16 +62,12 @@ class _MyAppState extends State<MyApp> {
 
   void _clickTrack(){
     GrowingTracker.trackCustomEvent('eventId');
-    GrowingTracker.trackCustomEvent('testEventId', num: 23.0, variable: {'testKey': 'testValue', 'testNumKey': '233'});
-    GrowingTracker.trackCustomEvent('eventId', num: 23.0);
     GrowingTracker.trackCustomEvent('eventId', variable: {'testkey': 'testValue', 'testNumKey': '2333'});
   }
 
   void _clickTrackItemKeyId(){
-    GrowingTracker.trackCustomEventItemKeyId('eventId','mykey','myId');
-    // GrowingTracker.trackCustomEventItemKeyId('testEventId', num: 23.0, variable: {'testKey': 'testValue', 'testNumKey': '233'});
-    // GrowingTracker.trackCustomEventItemKeyId('eventId', num: 23.0);
-    // GrowingTracker.trackCustomEventItemKeyId('eventId', variable: {'testkey': 'testValue', 'testNumKey': '2333'});
+    GrowingTracker.trackCustomEventItemKeyId('eventId', 'mykey', 'myId');
+    GrowingTracker.trackCustomEventItemKeyId('eventId', 'mykey', 'myId', variable: {'testkey': 'testValue', 'testNumKey': '2333'});
   }
 
   void _clickSetLoginUserAttributes(){

@@ -28,56 +28,57 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
 
   @Override
   public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-    if (call.method.equals("trackCustomEvent")){
+    if (call.method.equals("trackCustomEvent")) {
       onTrackCustomEvent(call);
-    }else if (call.method.equals("setConversionVariables")){
+    } else if (call.method.equals("setConversionVariables")) {
       onSetConversionVariables(call);
-    }else if (call.method.equals("setLoginUserAttributes")){
+    } else if (call.method.equals("setLoginUserAttributes")) {
       onSetLoginUserAttributes(call);
-    }else if (call.method.equals("setVisitorAttributes")) {
+    } else if (call.method.equals("setVisitorAttributes")) {
       onSetVisitorAttributes(call);
-    }else if (call.method.equals("cleanLoginUserId")){
+    } else if (call.method.equals("cleanLoginUserId")) {
       onCleanLoginUserId();
-    }else if (call.method.equals("setLoginUserId")){
+    } else if (call.method.equals("setLoginUserId")) {
       onSetLoginUserId(call);
-    }else{
+    } else {
       result.notImplemented();
       return;
     }
     result.success(null);
   }
 
-  private void onSetConversionVariables(MethodCall call){
+  private void onSetConversionVariables(MethodCall call) {
     GrowingTracker.get().setConversionVariables((Map<String, String>)call.arguments);
   }
 
-  private void onSetLoginUserAttributes(MethodCall call){
+  private void onSetLoginUserAttributes(MethodCall call) {
     GrowingTracker.get().setLoginUserAttributes((Map<String, String>)call.arguments);
   }
 
-  private void onSetLoginUserId(MethodCall call){
+  private void onSetLoginUserId(MethodCall call) {
     GrowingTracker.get().setLoginUserId((String)call.argument("userId"));
   }
 
-  private void onCleanLoginUserId(){
+  private void onCleanLoginUserId() {
     GrowingTracker.get().cleanLoginUserId();
   }
 
-  private void onSetVisitorAttributes(MethodCall call){
+  private void onSetVisitorAttributes(MethodCall call) {
     GrowingTracker.get().setVisitorAttributes((Map<String, String>)call.arguments);
   }
 
-  private void onTrackCustomEvent(MethodCall call){
+  private void onTrackCustomEvent(MethodCall call) {
     String eventId = (String) call.argument("eventId");
-    if (call.hasArgument("variable")){
-      Map<String, String> variable = call.argument("variable");
-      if (variable == null) return;
-      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>) variable);
-    }else{
-      GrowingTracker.get().trackCustomEvent(eventId);
+    Map<String, String> variable = null;
+    if (call.hasArgument("variable")) {
+      variable = call.argument("variable");
+    }
+    if (variable == null) {
+      GrowingTacker.get().trackCustomEvent(eventId);
+    } else {
+      GrowingTracker.get().trackCustomEvent(eventId, (Map<String, String>)variable);
     }
   }
-
 
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {

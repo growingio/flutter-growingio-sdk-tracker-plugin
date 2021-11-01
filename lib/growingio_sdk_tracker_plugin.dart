@@ -1,57 +1,62 @@
-
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 
 class GrowingTracker {
   static const MethodChannel _channel =
       const MethodChannel('growingio_sdk_tracker_plugin');
 
-  static Future<void> trackCustomEvent(String? eventId,
-      {double? num, Map<String, dynamic>? variable}) async {
+  static Future<void> trackCustomEvent(String? eventId, {Map<String, String>? variable}) async {
     if (eventId == null) return;
     Map<String, dynamic> args = {"eventId": eventId};
-    if (num != null) {
-      args['num'] = num;
-    }
     if (variable != null) {
       args['variable'] = variable;
     }
-    return await _channel.invokeMethod("trackCustomEvent", args);
+    try {
+      await _channel.invokeMethod("trackCustomEvent", args);
+    } catch(e) {
+      print('error :' + e.toString());
+    }
   }
 
-  static Future<void> trackCustomEventItemKeyId(String? eventId,String? itemKey,String? itemId,
-      {Map<String, dynamic>? variable}) async {
-    if (eventId == null||itemKey == null||itemId == null) return;
+  static Future<void> trackCustomEventItemKeyId(String? eventId, String? itemKey, String? itemId,
+      {Map<String, String>? variable}) async {
+    if (eventId == null || itemKey == null || itemId == null) return;
     Map<String, dynamic> args = {"eventId": eventId};
+    args["itemKey"] = itemKey;
+    args["itemId"] = itemId;
     if (variable != null) {
       args['variable'] = variable;
     }
-    if (itemKey != null) {
-      args["itemKey"] = itemKey;
+    try {
+      await _channel.invokeMethod("trackCustomEventItemKeyId", args);
+    } catch(e) {
+      print('error :' + e.toString());
     }
-    if (itemId != null) {
-    args["itemId"] = itemId;
-    }
-    return await _channel.invokeMethod("trackCustomEventItemKeyId", args);
   }
 
-  static Future<void> setLoginUserAttributes(Map<String, dynamic>? variable) async {
+  static Future<void> setLoginUserAttributes(Map<String, String>? variable) async {
     if (variable == null) return;
     try {
-      return await _channel.invokeMethod("setLoginUserAttributes", variable);
-    }
-    catch(e) {
+      await _channel.invokeMethod("setLoginUserAttributes", variable);
+    } catch(e) {
       print('error :' + e.toString());
     }
   }
 
   static Future<void> setLoginUserId(String? userId) async {
     if (userId == null) return;
-    return await _channel.invokeMethod("setLoginUserId", {"userId": userId});
-  }
-  static Future<void> cleanLoginUserId() async {
-    return await _channel.invokeMethod("cleanLoginUserId");
+    try {
+      await _channel.invokeMethod("setLoginUserId", {"userId": userId});
+    } catch(e) {
+      print('error :' + e.toString());
+    }
   }
 
+  static Future<void> cleanLoginUserId() async {
+    try {
+      await _channel.invokeMethod("cleanLoginUserId");
+    } catch(e) {
+      print('error :' + e.toString());
+    }
+  }
 }

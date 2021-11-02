@@ -30,7 +30,7 @@
     } else if ([methodName isEqualToString:@"setVisitorAttributes"]) {
         [[GrowingTracker sharedInstance] setVisitorAttributes:argDic];
     } else if ([methodName isEqualToString:@"setConversionVariables"]) {
-        [[GrowingTracker sharedInstance] setVisitorAttributes:argDic];
+        [[GrowingTracker sharedInstance] setConversionVariables:argDic];
     } else if ([methodName isEqualToString:@"setLoginUserId"]) {
         NSString *userId = argDic[@"userId"];
         [[GrowingTracker sharedInstance] setLoginUserId:userId];
